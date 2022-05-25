@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/14423d9cd0.js" crossorigin="anonymous"></script>
+        <!-- style -->
+    <link rel="stylesheet" href="/style/main.css">
+        <!-- js -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/pop_up.js" defer></script>
+    <title>DEVICES MSF</title>
+</head>
+<body>
+    <div class="container">
+        <h1>DEVICES MSF</h1>
+        <form id="formDevices" action="#">
+            <div class="formData autocomplete">
+                <label for="search">
+                    <input type="text" placeholder="Device" id="search">
+                </label>
+            </div>
+            <div class="formData">
+                <label for="version">
+                    <input type="text" placeholder="Version" id="version">
+                </label>
+            </div>
+            <div class="formData">
+                <label for="name">
+                    <input type="text" placeholder="Votre nom" id="name">
+                </label>
+            </div>
+            <div class="formData">
+                <label for="commentaire">
+                    <input type="text" placeholder="Commentaire" id="commentaire">
+                </label>
+            </div>
+            <div class="formData">
+                <label for="day">
+                    <input type="number" placeholder="jour" id="day">
+                </label>
+            </div>
+            <div class="formData">
+                <label for="submit">
+                    <!-- <input type="submit" value="submit" id="submit"> -->
+                    <button id="submit">Submit</button>
+                </label>
+            </div>
+        </form>
+
+       <div class="listeCadrsDevices">
+        <table>
+            <thead>
+                <tr>
+                    <th class="titre" colspan="2">Listes Devices</th>
+                </tr>
+            </thead>
+
+            <tbody class="listeDevices">
+                <div class="filter">
+                    <input type="text"  onkeyup="myfilter()" placeholder="fliterList" id="filter">
+                </div>
+                
+            </tbody>
+        </table>   
+
+        <table id="tableAllInfos"> 
+            <tr id="elements" >
+                <th>Device</th>
+                <th>Version</th>
+                <th>Nom</th>
+                <th>Commentaire</th>
+                <th>Jours</th>
+                <!-- <th>Update</th>
+                <th>Delete</th> -->
+            </tr>
+
+          
+        </table>
+        <table id="tbodyAllInfosUser">
+            <tbody id="tbodyInfos">
+
+            </tbody>
+        </table>
+
+        <div class="popup">
+            <!-- <i class="fa-solid fa-rectangle-xmark"></i> -->
+        </div>
+       </div>
+        
+    </div>
+</body>
+</html>

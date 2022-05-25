@@ -1,0 +1,120 @@
+
+{
+"device" : [
+    {
+        "name": "iphone X",
+        "currentUser":"driss"
+    },
+    {
+        "name": "iphone 6 32Go",
+        "currentUser":"alex"
+        
+    },
+
+    {
+        "name": "iphone 6 16Go",
+        "currentUser":""
+    },
+    {
+        "name": "iphone 6s Plus 64Go",
+        "currentUser":""
+    },
+
+    {
+        "name": "iphone 5S",
+        "currentUser":""
+    },
+
+    {
+        "name": "iphone 5MSTV",
+        "currentUser":""
+    },
+
+    {
+        "name": "iphone 5C",
+        "currentUser":""
+    },
+    {
+        "name": "iphone Xr",
+        "currentUser":""
+    },
+
+    {
+        "name": "iPad Air 2 16Go",
+        "currentUser":""
+    },
+    {
+        "name": "Samsung Galaxy A5",
+        "currentUser":""
+    },
+
+    {
+        "name": "Nexus 5X",
+        "currentUser":""
+    },
+
+    {
+        "name": "Pixel 4",
+        "currentUser":""
+    },
+
+    {
+        "name": "Pixel 3A XL",
+        "currentUser":""
+    },
+
+    {
+        "name": "Huawei Mate 10 Pro",
+        "currentUser":""
+    },
+
+    {
+        "name": "Nexus 6P",
+        "currentUser":""
+    },
+
+    {
+        "name": "Samsung S10",
+        "currentUser":""
+    },
+
+    {
+        "name": "Samsung Galaxy S7",
+        "currentUser":""
+    },
+
+    {
+        "name": "Samsung Galaxy S4",
+        "currentUser":""
+    },
+
+    {
+        "name": "Samsung Galaxy Note 2",
+        "currentUser":""
+    },
+
+    {
+        "name": "Huawei Honor 7",
+        "currentUser":""
+    },
+
+    {
+        "name": "Samsung Galaxy J7",
+        "currentUser":""
+    },
+
+    {
+        "name": "Samsung Galaxy Tab A7",
+        "currentUser":""
+    },
+    {
+        "name": "Samsung Galaxy Tab A",
+        "currentUser":""
+    },
+    {
+        "name": "Redmi Note 8 2021 64Go",
+        "currentUser":""
+    }
+]
+}
+

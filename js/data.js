@@ -1,0 +1,2 @@
+let devices = ["iphone X","iphone 6 32Go","iphone 6 16Go","iphone 6s Plus 64Go","iphone 5S","iphone 5MSTV","iphone 5C","iphone Xr","iPad Air 2 16Go","Samsung Galaxy A5","Nexus 5X","Pixel 4","Pixel 3A XL",
+"Huawei Mate 10 Pro","Nexus 6P","Samsung S10","Samsung Galaxy S7","Samsung Galaxy S4","Samsung Galaxy Note 2","Huawei Honor 7","Samsung Galaxy J7","Samsung Galaxy Tab A7","Samsung Galaxy Tab A","Redmi Note 8 2021 64Go"]
