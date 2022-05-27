@@ -38,7 +38,7 @@ form{
   }
   input[type=text] {
     background-color: #f1f1f1;
-    /* width: 100%; */
+    width: 189px;
   }
  #submit {
     background-color: DodgerBlue;
@@ -77,49 +77,53 @@ form{
 /** table **/
 
 .titre{
-    padding: 10px;
+  padding: 28px;
 }
   table,
 td {
-    border: 1px solid #333;
-    padding: 4px;
-    font-size: 14px;
+  margin-top: 79px;
 }
 
-thead,
+thead{
+  background-color: #333;
+  color: #fff;
+}
+
 tfoot {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
 }
 
 
 .listeCadrsDevices{
-    margin: -39px 0px 0 -217px;
-
+  
+  margin: -71px 0 0 -201px;
 }
 
 #tableAllInfos{
-    border: none;
-    margin: -673px  0px 5px 100px;
+    /* border: none;
+    margin: -673px  0px 5px 100px; */
 }
 
 #tableAllInfos tr th{
 
     padding: 0 0 0 130px;
     font-size: 12px;
-
+  
 }
 
 #tbodyInfos tr th{
     border: none;
-    padding: 8px 0 0 134px;
+    padding: 8px 0 0 76px;
     /* width: 181px; */
     font-size: 12px;
 }
 
 #tbodyAllInfosUser{
-    border: none; 
-    margin: 1px 0px 35px 91px;
+    /* border: none;  */
+    /* margin: -546px 0px 35px 114px */
+    position: absolute;
+    top: 40%;
 }
 
 hr {
@@ -190,3 +194,91 @@ hr {
 }
 
 
+
+/*Style message d'erreur.*/
+.error {
+  color :#e54858;
+  font-size: 12px;
+
+}
+
+/*Traitement style message d'erreur*/
+
+.formData[data-error]::after {
+  content: attr(data-error);
+  font-size: 0.4em;
+  color: #e54858;
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align: right;
+  line-height: 0.3;
+  opacity: 0;
+  transition: 0.3s;
+}
+.formData[data-error-visible="true"]::after {
+  opacity: 1;
+}
+
+/*Traitement style message d'erreur*/
+.formData .text-control[data-error-visible="true"] {
+  border: 2px solid #e54858;
+}
+/*Traitement style saisie correcte*/
+.formData .text-control[data-error-visible="false"] {
+  border: 2px solid #279e7a;
+}
+
+
+ul li {
+  border: 1px solid #333;
+  padding: 10px 5px;
+  /* margin: 10px auto; */
+  list-style: none;
+  font-size: 15px;
+  width: 189px;
+}
+
+.bg_list{
+  background-color: #fff;
+  color: #333;
+  margin: 35px 0;
+}
+
+#elements{
+ 
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 189px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.show {display: block;}
+
+/* The search field */
+#filter {
+  box-sizing: border-box;
+  background-image: url('/images/search.svg');
+  background-position: 156px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 9px;
+  border: none;
+  background-size: 22px;
+  border-bottom: 1px solid #ddd;
+}

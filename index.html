@@ -11,36 +11,44 @@
         <!-- js -->
     <script src="/js/main.js" defer></script>
     <script src="/js/pop_up.js" defer></script>
+    <script src="/js/validationInfos.js" defer></script>
+    <script src="/js/filter.js" defer></script>
+    
     <title>DEVICES MSF</title>
 </head>
 <body>
     <div class="container">
         <h1>DEVICES MSF</h1>
-        <form id="formDevices" action="#">
+        <form id="formDevices" action="#" onsubmit="return validate(this)"/>
             <div class="formData autocomplete">
                 <label for="search">
-                    <input type="text" placeholder="Device" id="search">
+                    <input class="text-control" type="text" placeholder="Device" id="search" data-error-visible=""><br>
                 </label>
+                <span class="error" id="dev_error"></span>
             </div>
             <div class="formData">
-                <label for="version">
-                    <input type="text" placeholder="Version" id="version">
+                <label for="version">         
+                    <input class="text-control" type="text" placeholder="Version" id="version" data-error-visible=""> <br>
                 </label>
+                    <span class="error" id="first_error"></span>
             </div>
             <div class="formData">
-                <label for="name">
-                    <input type="text" placeholder="Votre nom" id="name">
+                <label for="name">  
+                    <input  class="text-control" type="text" placeholder="Votre nom" id="name"> <br>
                 </label>
+                    <span class="error" id="name_error"></span>
             </div>
             <div class="formData">
                 <label for="commentaire">
-                    <input type="text" placeholder="Commentaire" id="commentaire">
+                    <input  class="text-control" type="text" placeholder="Commentaire" id="commentaire"> <br>
                 </label>
+                <span class="error" id="comt_error"></span>
             </div>
             <div class="formData">
                 <label for="day">
-                    <input type="number" placeholder="jour" id="day">
+                    <input  class="text-control" type="number" placeholder="jour" id="day" min="0"> <br>
                 </label>
+                <span class="error" id="day_error"></span>
             </div>
             <div class="formData">
                 <label for="submit">
@@ -51,20 +59,13 @@
         </form>
 
        <div class="listeCadrsDevices">
-        <table>
-            <thead>
-                <tr>
-                    <th class="titre" colspan="2">Listes Devices</th>
-                </tr>
-            </thead>
-
-            <tbody class="listeDevices">
-                <div class="filter">
-                    <input type="text"  onkeyup="myfilter()" placeholder="fliterList" id="filter">
-                </div>
+                   
+            <div class="bg_list">
+                 <ul> </ul>
+             </div>
                 
-            </tbody>
-        </table>   
+        </div>
+        
 
         <table id="tableAllInfos"> 
             <tr id="elements" >
@@ -81,15 +82,14 @@
         </table>
         <table id="tbodyAllInfosUser">
             <tbody id="tbodyInfos">
-
+    
             </tbody>
         </table>
 
         <div class="popup">
             <!-- <i class="fa-solid fa-rectangle-xmark"></i> -->
         </div>
-       </div>
-        
+      
     </div>
 </body>
 </html>
